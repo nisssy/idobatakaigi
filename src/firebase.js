@@ -22,5 +22,5 @@ const database = firebase.database();
 const messagesRef = database.ref('messages');
 
 export const pushMessage = ({name, text}) => {
-    messagesRef.push({name, text, })
+    messagesRef.push({name, text })
 }
