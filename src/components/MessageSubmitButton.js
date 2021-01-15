@@ -4,7 +4,6 @@ import {IconButton} from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 
 const MessageSubmitButton = ({name ,setText, text, inputEl}) => {
-    console.log(inputEl)
     return (
         <IconButton 
         aria-label="send" 
