@@ -9,7 +9,7 @@ const MessageSubmitButton = ({name ,setText, text, inputEl}) => {
         aria-label="send" 
         disabled={text===''}
         onClick={() => {
-            pushMessage({name: 'a',text});
+            pushMessage({name,text});
             setText('');
             inputEl.current.focus();
         }}

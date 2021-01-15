@@ -15,7 +15,7 @@ const MessageField = ({inputEl, name, setText, text}) => {
         if(!text)return;
         if (isComposed)return;
         if(e.key === 'Enter' ){
-            pushMessage({name: 'に', text})
+            pushMessage({name, text})
             e.preventDefault();
             setText('');
         }
